@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+nav ul {
+  display: inline-block;
+  text-align: center;
+  margin:0;
+  padding:0;
+  /*border: solid red;*/
+  background:#808080;
+  width: 768px;
+
+}
+
+nav li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
