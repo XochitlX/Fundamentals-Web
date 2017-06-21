@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<style type="text/css">
+.estilo { background: red; }
+.estilo2 { background: blue; }
+.estilo3 { background: gray; }
+.estilo4 { background: green; }
+</style>
+<html lang="en"> 
+<head> 
+  <meta charset="utf-8"> 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head> 
+<body> 
+  <!-- <button class = "btn btn-success"> BOtonsito</button> -->
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+  <!-- Cuadricula imagen-texto-boton -->
+  <div>
+    <div class="row"> <!-- primera -->
+      <div class="col-sm-3">
+        <div class="thumbnail"> 
+          <img src="lana.jpg" alt="missing image" >
+          <div class="caption">
+            <h3>Lana del Rey</h3>
+            <p>Los principales componentes que usaremos en Bootstrap los puedes encontrar en su página de documentación</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3"> <!-- segunda -->
+        <div class="thumbnail"> 
+          <img src="http://www.garuyo.com/sites/default/files/styles/large/public/images/2013/03/yeah-yeah-yeahs-entrevista-vive-latino-2013-concierto_121423.jpg_27992.jpg?itok=X0Y0pSKM" alt="...">
+          <div class="caption">
+            <h3>Yeah Yeah Yeahs¡</h3>
+            <p>Puedes ser creativo y anidar elementos uno a dentro del otro, y usar muchos componentes diferentes</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3"> <!-- tercera -->
+        <div class="thumbnail"> 
+          <img src="http://3.bp.blogspot.com/-G73vthINR78/T6mlVXnTDiI/AAAAAAAACGw/S2b_SjoPcXQ/s1600/Blur+fans+7.jpg" alt="..." style="width:443px!important;height:333px!important;">
+          <div class="caption">
+            <h3>Blur</h3>
+            <p>Puedes ser creativo y anidar elementos uno a dentro del otro, y usar muchos componentes diferentes</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <form>
+          <div class="form-group">
+            <label for="nombre">Email address:</label>
+            <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Enter mail"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Password:</label>
+            <input class="form-control"  id="email" type="text" name="email" placeholder="Password"/>
+          </div>
+
+
+          <h4>File Input</h4>
+          <label class="btn btn-raised btn-info">
+            Choose File <input type="file" style="display: none;">
+          </label>
+          <label>No file choosen</label>
+          <p>Signed in as Mark Otto</p>
+
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out¡
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <div class="col-sm-4">
+        <div class="media">
+          <div class="media-left">
+            <img src="http://1.bp.blogspot.com/-TCywaAY0XTQ/TkRO1vMHDaI/AAAAAAAAACo/5qjbSqjT-YE/s1600/51HLbc53hCL__SS500_.jpg" class="media-object" style="width:50px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Re</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <!-- Nested media object -->
+            <div class="media">
+              <div class="media-left">
+                <img src="http://1.bp.blogspot.com/-TCywaAY0XTQ/TkRO1vMHDaI/AAAAAAAAACo/5qjbSqjT-YE/s1600/51HLbc53hCL__SS500_.jpg" class="media-object" style="width:50px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Re*</small></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>               
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+    
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">Panel content</div>
+          <div class="panel-footer">Panel footer</div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <button class="btn btn-primary" type="button">
+          Home <span class="badge">42</span>
+        </button>
+        <a href="#">More <span class="badge">16</span></a>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html> 
+
+
