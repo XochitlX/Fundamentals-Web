@@ -39,6 +39,7 @@ h3 {
   color: purple;
   font-size: 25px;
 }
+
 #info {
   position: absolute;
   top: 1000px;
@@ -50,6 +51,7 @@ h3 {
   background-position: right top;
   margin-right: 200px;
 }
+
 
 #down {
   position: absolute;
