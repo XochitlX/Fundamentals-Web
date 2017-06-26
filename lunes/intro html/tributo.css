@@ -1,0 +1,68 @@
+
+#caja1 {
+  width:1600px;
+  height: 200px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 80px;
+  font-style: oblique;
+  color: purple;
+  position: absolute;
+  top:  50px; 
+  left: 100px;
+}
+
+h2 {
+  margin: 0;
+  position: absolute;
+  top:  80px; 
+  left: 800px;
+}
+
+#image {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+
+h6 {
+  color: blue;
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  color: purple;
+  font-size: 25px;
+}
+#info {
+  position: absolute;
+  top: 1000px;
+  left: 100px;
+
+  width: 1600px;
+  background-image: url("http://imgs.identidadeshop.com.br/mangacamisa/produtos/800_camiseta-morrissey.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+
+#down {
+  position: absolute;
+  top: 1700px;
+  left: 500px;
+}
+
+h4 {
+  color: purple;
+  font-style: oblique;
+  font-size: 25px;
+}
+
+a {
+  float: right;
+}
