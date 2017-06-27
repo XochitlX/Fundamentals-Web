@@ -1,4 +1,9 @@
-$(window).on("scroll", function () {
-  // Aquí deberás escribir la lógica que modificará la barra
-  
+
+$(document).on('scroll', function (e) {
+    var o = $(document).scrollTop() / 50;
+    if (o > 0.01) { 
+      $('.top-nav').css('opacity', 0.5);}
+    else {
+      $('.top-nav').css('opacity', 1);
+    }
 });

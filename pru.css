@@ -1,0 +1,44 @@
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            $(".menu").css({"background-color":"transparent"});   
+        }
+        else{
+            $(".menu").css({"background-color":"black"});
+        }
+
+    })
+})
+
+
+
+
+$(document).on('scroll', function (e) {
+    e.preventDefault();
+    var o = $(document).scrollTop() / 50;
+    if (o > 0.500) { o = 0.5;}
+    var e = $('.top-nav');
+    $('.top-nav').css('opacity', o);
+});
+
+
+
+$(window).scroll(function(){
+  if( $(window).scrollTop() == $(window).height() ){
+    $(".top-nav").css('opacity', 0.5);   
+  }
+  else{
+    $(".top-nav").css('opacity', 1);
+  }
+});
+
+
+
+
+
+<!-- var o = $(document).scrollTop() / 50; -->
+
+= (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    
+
+    

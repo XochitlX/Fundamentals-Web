@@ -2,3 +2,58 @@
   margin: 0 auto;
   width: 768px;
 }
+
+.content {
+  padding-top: 100px; 
+  overflow: hidden;
+}
+
+body {
+
+}
+
+.top-nav {
+  top: 0;
+  background: black;
+  width: 100%;
+  position: fixed;
+   
+  /*z-index: -50;
+  overflow: scroll;
+  overflow: hidden;*/
+  
+}
+
+/*nav {
+  border-style: solid;  
+  border-color: red;
+  border: solid red;
+
+}*/
+
+ul {
+  position: absolute;
+  display: inline;
+  margin:0;
+  top: 0; 
+  padding-top: 22px;
+  padding-left:150px; 
+}
+
+li {
+  display: inline;
+  margin-left: 60px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white; 
+margin-bottom: 100px;
+}
+
+#logo {
+  display: inline-block;
+  padding-top: 0px; 
+}
+
