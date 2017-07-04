@@ -1,0 +1,23 @@
+
+<h1>Reductor De Urls!</h1>
+
+<form action="/urls" method="post">
+  <div class="form-group">
+    <label for="long_url">Ingresa Url¡</label>
+    <input type="text" class="form-control" name="info_url">
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<br>
+<% if @total_url %>
+  <% @total_url.each.with_index do |url, index| %>
+    <br>
+    <%= index %>.-
+    <%= url.click_count %>
+    <a href="/<%= url.id %>"> <%= url.short_url %> </a>
+    <br>
+    <br>
+  <% end %>
+<%end%>
