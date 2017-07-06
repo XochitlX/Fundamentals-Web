@@ -1,0 +1,38 @@
+
+<h1>Reductor De Urls!</h1>
+
+<form action="/start" method="get">
+  <button type="submit" class="btn btn-default">Iniciar Sesión</button>
+</form>
+<br>
+<form action="/new" method="get">
+  <button type="submit" class="btn btn-default">Crear Usuario</button>
+</form>
+
+<br>
+<br>
+
+************************************************************
+<form action="/urls" method="post">
+  <div class="form-group">
+    <label for="long_url">Ingresa Url¡</label>
+    <input type="text" class="form-control" name="info_url">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+************************************************************
+<br>
+<br>
+<br>
+<h3>Url's Realizadas¡¡¡¡</h3>
+<% if @total_url %>
+  <% @total_url.each.with_index do |url, index| %>
+    <br>
+    **<%= url.click_count %>**  
+     <%= url.long_url %>
+    <br>
+    <a href="/short_url/<%= url.id %>" target="_blank"> <%= url.short_url %> </a>
+    <br>
+    <br>
+  <% end %>
+<%end%>

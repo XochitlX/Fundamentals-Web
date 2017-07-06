@@ -1,0 +1,48 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+small.page_no {
+  float: right;
+  color: #ddd;
+}
+
+.pagination ul {
+  display: inline-block;
+  list-style:none;
+  text-align: center;
+  padding: 0;
+}
+
+.pagination ul li {
+  display: inline;
+
+}
+
+.pagination ul li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd; /* Gray */
+}
+
+.pagination ul li .active {
+  background-color: #99ccff; /*azulito claro*/
+  color: white;
+}
+
+.pagination ul li a:hover {
+  background-color: #ddd; /* Gray */
+}
+
