@@ -1,0 +1,20 @@
+<header>
+  <img id="logo" src="codea-logo.png">
+</header>
+
+<h1>Slot Machine</h1>
+<p><%= @rolls %></p>
+
+
+<div id="slot-machine">
+  <form id="form1" method="post" action="/rolls">
+    <input id="submit1" type="hidden" value="<%= @rolls %>">
+    <input id="submit2" type="submit" value="SPIN">
+  </form>
+  
+  <div id="die">
+    
+    
+    <%= erb :_die_roll, layout: false %>
+  </div>
+</div>
