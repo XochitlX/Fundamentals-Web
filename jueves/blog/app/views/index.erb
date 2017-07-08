@@ -1,0 +1,46 @@
+  
+<h1> ¡Love is like a Song! </h1>
+<h3> El mundo de la música </h3>
+
+<form action="/new_post" method="post">
+  <div class="form-group">
+    <p>Registra tu Post¡</p>
+    <label for="new_post"> Título </label>
+    <input type="text" class="form-control" name="new_title">
+    <p></p>
+    <label for="new_post"> Texto </label>
+    <input type="text" class="form-control" name="new_info">
+    <p></p>
+    <label for="new_tag">Agrega tags: </label>
+    <input type="text" name="info_tags" placeholder="tag1, tag2, ..."><br>
+  </div>
+  <button type="submit" class="btn btn-default">ok¡</button>
+</form>
+
+<br>
+<br>
+<br>
+
+
+
+<h3>*****All the Post's in the Blog¡¡¡¡*****</h3>
+<% if @posts %>
+  <% @posts.each do |post| %>
+    <br>
+    <h4><a href="/post/<%= post.title %>" > <%= post.title %></a></h4> 
+    <p>"<%= post.text %>"</p>
+    
+    <% conn = @connection.where post_id: post.id %>
+      <% conn.each do |item| %>
+      <% t = item.tag_id %>
+   
+      <% tag = @tags.find t %> 
+      <a href="/tag/<%= tag.name %>" >#<%= tag.name %></a> 
+    
+    <%end%>
+
+    <br>
+    <br>
+  <% end %>
+<%end%>
+  
