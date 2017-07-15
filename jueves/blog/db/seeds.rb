@@ -6,14 +6,15 @@ Post.create(title: "David Bowie aparecen online", text: "'Atomica', 'The Informe
 Post.create(title: "holaa")
 Post.create(title: "Enrique Bunbury anuncia el lanzamiento", text: "Enrique Bunbury cumplió 46 años y aprovechó el festejo para revelar los datos de su esperado nuevo disco")
 
-Tag.create(name: "Groupo")
+Tag.create(name: "Grupo")
 Tag.create(name: "Solista")
-Tag.create(name: "Led Zeppelin")
-Tag.create(name: "The Killers")
-Tag.create(name: "The Beatles")
-Tag.create(name: "David Bowie")
+Tag.create(name: "LedZeppelin")
+Tag.create(name: "TheKillers")
+Tag.create(name: "TheBeatles")
+Tag.create(name: "DavidBowie")
 Tag.create(name: "Grammy")
-Tag.create(name: "Enrique Bunbury")
+Tag.create(name: "EnriqueBunbury")
+
 
 Connection.create(post_id: 1, tag_id: 3)
 Connection.create(post_id: 1, tag_id: 1)

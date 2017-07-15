@@ -1,0 +1,37 @@
+
+
+<h3> Editando.... </h3>
+
+***********************************************
+<form action="/" method="get">
+  <button type="submit" class="btn btn-default">Regresar</button>
+</form>
+***********************************************
+<form action="/quit_post/<%= @post_to_change.id %>" method="post">
+<button type="submit" class="btn btn-default">Eliminar Post¡</button>
+<br> 
+</form>
+***********************************************
+
+<br>
+<br><% if @post_to_change %>
+<%= @post_to_change.id %>
+  <h4><%= @post_to_change.title %>
+</h4>  <p><%= @post_to_change.text %></p>
+<p></p>
+
+
+<form action="/modify_post/<%= @post_to_change.id %>" method="post">
+  <button type="submit" class="btn btn-default">Edit all Text¡</button>
+<p></p>
+</form>
+***********************************************
+
+  <% all_tags = @post_to_change.tags %>
+  <% all_tags.each do |tag| %>
+   <p><a href="/post/<%= @post_to_change.id%>/tag/<%= tag.id %>" > #<%= tag.name %> </a> </p>
+  <%end%>
+<% end %>
+<br>
+<br>
+***********************************************

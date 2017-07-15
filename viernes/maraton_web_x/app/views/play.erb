@@ -1,0 +1,27 @@
+
+<h2>¡A Jugar!¡¡¡</h2>
+<h3> <%= @user.name %> </h3>
+
+******************************************************
+
+<h3> Preguntas: </h3>
+
+<form action="/user/<%= @user.id %>/deck/<%= @id_deck %>/game" method="post">
+  <% if @select_cards %>
+    <% answerss = [] %>
+    <% @select_cards.each_with_index do |card, index| %>
+      <h4><%= card.text %>:</h4>
+      
+      <% answers = @card_answer[index] %>
+      <% answers.each do |answer| %>
+      <% answerss = answerss << [card.id,  answer.id] %>
+        <input type="checkbox" name="deck[<%=card.id%>]" value="<%= answer.id %>"> <%= answer.option %> <br>
+      <%end%>      
+
+    <%end%>
+  <%end%>
+
+  <br>
+  <input type="submit" value="Submit">
+</form>
+

@@ -11,8 +11,8 @@
     <label for="new_post"> Texto </label>
     <input type="text" class="form-control" name="new_info">
     <p></p>
-    <label for="new_tag">Agrega tags: </label>
-    <input type="text" name="info_tags" placeholder="tag1, tag2, ..."><br>
+    <label for="new_tag">Tags: </label>
+    <input type="text" name="info_tags" placeholder="tag1 tag2 ..."><br>
   </div>
   <button type="submit" class="btn btn-default">ok¡</button>
 </form>
@@ -27,7 +27,7 @@
 <% if @posts %>
   <% @posts.each do |post| %>
     <br>
-    <h4><a href="/post/<%= post.title %>" > <%= post.title %></a></h4> 
+    <h4><a href="/post/<%= post.id%>" > <%= post.title %></a></h4> 
     <p>"<%= post.text %>"</p>
     
     <% conn = @connection.where post_id: post.id %>

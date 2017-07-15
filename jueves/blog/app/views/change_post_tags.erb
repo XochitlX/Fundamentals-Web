@@ -1,0 +1,38 @@
+
+<h3> Continuando Edición.... </h3>
+
+***********************************************
+<br>
+<br>
+<% if @update_post %>
+  <h4><%= @update_post.title %></h4>
+  <p><%= @update_post.text %></p>
+  <% all_tags = @update_post.tags %>
+***********************************************  
+  <% all_tags.each do |tag| %>
+    <br>
+    #<%= tag.name %> 
+  <%end%>
+<% end %>
+<br>
+***********************************************
+<br>
+<br>
+<form action="/no_modify_tag_of_post" method="post">
+  <button type="submit" class="btn btn-default">Mismos Tags¡</button>
+</form>
+***********************************************
+<br>
+<br>
+
+
+<form action="/modify_tag_of_post/<%= @update_post.id %>" method="post">
+  <div class="form-group">
+    <h3>Reescribe y/o edita los tags..</h3>
+    <label for="change_post"> Título </label>
+    <input type="text" class="form-control" name="modify_tags" placeholder="tag1 tag2 tag3 ...">  
+  </div>
+  <br>
+  <button type="submit" class="btn btn-default">Editar¡</button>
+</form>
+

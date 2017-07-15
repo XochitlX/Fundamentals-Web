@@ -1,0 +1,29 @@
+
+<h3> Editando el Post.... </h3>
+
+***********************************************
+
+<h4><%= @info_post.title %></h4>
+<p><%= @info_post.text %></p>
+<br>
+<br>
+***********************************************
+
+
+<form action="/complete_modify/<%= @info_post.id %>" method="post">
+  <div class="form-group">
+    <h3>Realiza los cambios necesarios..</h3>
+    <label for="change_post"> Título </label>
+    <input type="text" class="form-control" name="change_title" value="<%= @info_post.title %>">
+    <p></p>
+    <label for="change_post"> Texto </label>
+    <input type="text" class="form-control" name="change_info" value="<%= @info_post.text %>">
+    <p></p>
+
+  </div>
+  <button type="submit" class="btn btn-default">Editar¡</button>
+</form>
+
+<br>
+<br>
+<br>

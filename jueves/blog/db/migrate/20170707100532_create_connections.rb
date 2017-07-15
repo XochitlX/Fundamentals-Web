@@ -1,4 +1,4 @@
-class CreateConnections < ActiveRecord::Migration[4.2]t
+class CreateConnections < ActiveRecord::Migration[4.2]
   def change
     create_table :connections do |t|
       t.belongs_to :post, index: true
